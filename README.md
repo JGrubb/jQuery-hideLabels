@@ -10,7 +10,7 @@ Currently only takes the selector of the label you want to hide.  This plugin do
 
     <div class="form-item">
         <label for="firstName" class="overlay">First Name</label>
-        <input name="firstName" />
+        <input type="text" name="firstName" />
     </div>
 
 *And I have this in my stylesheet*
