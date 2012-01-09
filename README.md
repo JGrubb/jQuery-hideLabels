@@ -4,20 +4,16 @@ I got tired of writing the code to hide and show form labels that were nested in
 
 ###Usage
 
-Currently only takes the selector of the label you want to hide --
+Currently only takes the selector of the label you want to hide.  This plugin doesn't do it all.  In other words, you still have to write the CSS to position your labels and inputs where you want them --
 
-`$('label.overlay').hideLabels();`
-
-This plugin doesn't do it all.  In other words, you still have to write the CSS to position your labels and inputs where you want them --
-
-*given I have such markup:*
+*Given I have such markup:*
 
     <div class="form-item">
         <label for="firstName" class="overlay">First Name</label>
         <input name="firstName" />
     </div>
 
-*and I have this in my stylesheet*
+*And I have this in my stylesheet*
 
     .form-item
         position: relative
@@ -26,6 +22,6 @@ This plugin doesn't do it all.  In other words, you still have to write the CSS 
         left: 5px
         top: 2px
 
-*this will hide and show the form labels on input focus*
+*This will hide and show the form labels on input focus*
 
     $('label.overlay').hideLabels();
