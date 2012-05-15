@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-hidelabels by JGrubb</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-hidelabels</h1>
+        <p>A jQuery plugin to hide and show nested form labels</p>
+        <p class="view"><a href="https://github.com/JGrubb/jQuery-hideLabels">View the Project on GitHub <small>JGrubb/jQuery-hideLabels</small></a></p>
+        <ul>
+          <li><a href="https://github.com/JGrubb/jQuery-hideLabels/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/JGrubb/jQuery-hideLabels/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/JGrubb/jQuery-hideLabels">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>jQuery HideLabels</h2>
+
+<p>I got tired of writing the code to hide and show form labels that were nested inside of form inputs on tightly spaced forms.  So after about the 12th time, I wrote a jQuery plugin to do it for me.</p>
+
+<h3>Usage</h3>
+
+<p>Currently only takes the selector of the label you want to hide.  This plugin doesn't do it all.  In other words, you still have to write the CSS to position your labels and inputs where you want them --</p>
+
+<p><em>Given I have such markup:</em></p>
+
+<pre><code>&lt;div class="form-item"&gt;
+    &lt;label for="firstName" class="overlay"&gt;First Name&lt;/label&gt;
+    &lt;input type="text" name="firstName" /&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><em>And I have this in my stylesheet</em></p>
+
+<pre><code>.form-item {
+    position: relative; }
+label {
+    position: absolute;
+    left: 5px;
+    top: 2px; }
+</code></pre>
+
+<p><em>This will hide and show the form labels on input focus</em></p>
+
+<pre><code>$('label.overlay').hideLabels();
+</code></pre>
+
+<h3><a href="http://hidelabels.ibdweb.net/">Example</a></h3>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/JGrubb">JGrubb</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
